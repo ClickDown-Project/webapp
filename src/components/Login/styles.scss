@@ -1,0 +1,161 @@
+.login-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  background: url(https://app-cdn.clickup.com/login-bg.fcb221668da96b8a1817.svg) bottom/cover no-repeat;
+
+  .login-page {
+    &-new__header {
+      width: 100%;
+      height: 100px;
+      padding: 0.5rem 1rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        font-weight: 500;
+      }
+
+      button {
+        margin-left: 10px;
+        box-shadow: 0px 5px 10px 0px rgb(224, 224, 224);
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      &-logo {
+        width: auto;
+        height: 124px;
+      }
+    }
+
+    &-new__main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-form-title {
+        margin-bottom: 1.25rem;
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      &-container {
+        width: 480px;
+        position: relative;
+        margin-top: -10px;
+      }
+
+      &-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 100%;
+        padding: 30px 60px 26px;
+        border-radius: 0.5rem;
+        box-shadow: 0px 5px 15px 0px rgba(86, 110, 151, 0.25);
+
+        background-color: white;
+
+        .login-form {
+          width: 100%;
+
+          &-item {
+            margin-bottom: 20px;
+          }
+
+          &-label {
+            display: block;
+            font-size: 10px;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+          }
+
+          &-input {
+            width: 100%;
+
+            * {
+              border-color: #e9ebf0;
+            }
+
+            input {
+              font-size: 12px;
+              color: #e9ebf0;
+
+              &:-webkit-autofill {
+                background-color: transparent !important;
+                -webkit-box-shadow: 0 0 0 50px white inset;
+              }
+            }
+
+            span {
+              background-color: white;
+            }
+          }
+
+          &-btn__submit {
+            width: 100%;
+            margin-top: 0.5rem;
+            font-weight: 700;
+          }
+
+          &-redirect__link {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 1.5rem;
+            
+            a {
+              color: var(--primary-color);
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline dashed var(--primary-color);
+              }
+            }
+          }
+        }
+      }
+
+      &-bot {
+        font-weight: 700;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: white;
+
+        text-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+        letter-spacing: 2px;
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      &-help {
+        background: hsla(0, 0%, 100%, .2);
+        box-shadow: 0 5px 15px rgba(16, 30, 54, 0.15);
+        border-radius: 6px;
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        position: absolute;
+        bottom: 65px;
+        right: -60px;
+        flex-direction: column;
+
+        font-size: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

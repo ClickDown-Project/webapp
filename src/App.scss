@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "~bootstrap/scss/bootstrap";
+@import "./shared/scss/button";
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --bs-body-font-family: 'Poppins', sans-serif !important;
+  --primary-color: #7b68ee;
+  --primary-color-dark: #5b43ea;
+  --primary-color-light: #dfdbfb;
+  --primary-header-color: #7c4dff;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
